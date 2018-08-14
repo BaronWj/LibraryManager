@@ -21,6 +21,7 @@
     // Do any additional setup after loading the view.
 //    1E90FF  注释天蓝色
     [self.navigationController.navigationBar navBarBackGroundColor:[UIColor colorWithHexString:@"0x1E90FF"] image:nil];//颜色
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
 //    [self.navigationController.navigationBar navBarMyLayerHeight:90];//背景高度
     //    [self.navigationController.navigationBar navBarAlpha:0];//透明度
     //    [self.navigationController.navigationBar navBarBottomLineHidden:YES];//隐藏底线
