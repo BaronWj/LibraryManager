@@ -72,6 +72,22 @@
             </objects>
             <point key="canvasLocation" x="-1015" y="-164"/>
         </scene>
+        <!--Add Task View Controller-->
+        <scene sceneID="Vte-cW-RAN">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="16K-c7-QAR" customClass="AddTaskViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gH3-lY-06q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oi7-kV-1Ch"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MYR-no-F01"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvc-rM-Iuf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="27"/>
+        </scene>
         <!--馆藏-->
         <scene sceneID="QWK-Wb-heM">
             <objects>
@@ -92,7 +108,7 @@
         <!--任务-->
         <scene sceneID="sKn-qE-7YV">
             <objects>
-                <navigationController id="0bb-du-Lqe" sceneMemberID="viewController">
+                <navigationController hidesBottomBarWhenPushed="YES" id="0bb-du-Lqe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="任务" image="first" selectedImage="first" id="LbH-Db-1HK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RAQ-xt-J1v">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -158,7 +174,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pV6-kX-kbf"/>
                     </view>
-                    <navigationItem key="navigationItem" title="任务" id="Dmj-XN-C1z"/>
+                    <navigationItem key="navigationItem" title="任务" id="Dmj-XN-C1z">
+                        <barButtonItem key="rightBarButtonItem" title="添加" id="qoX-Id-jic">
+                            <connections>
+                                <segue destination="16K-c7-QAR" kind="push" id="v0K-7S-PZC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="myTaskTableView" destination="8iB-Fc-OGX" id="sW7-Yc-EAt"/>
                     </connections>
@@ -170,7 +192,7 @@
         <!--My Task Detail View Controller-->
         <scene sceneID="jAn-A7-HIH">
             <objects>
-                <viewController id="wJf-IA-gje" customClass="MyTaskDetailViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="wJf-IA-gje" customClass="MyTaskDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G6H-vl-Ubf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Zk-5t-mhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-159" y="625"/>
+            <point key="canvasLocation" x="-143" y="738"/>
         </scene>
         <!--圈内-->
         <scene sceneID="iCf-LE-o5d">
@@ -268,7 +290,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController hidesBottomBarWhenPushed="YES" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
