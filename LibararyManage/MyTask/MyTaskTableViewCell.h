@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyTaskTableView : UITableView
-
+@interface MyTaskTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *myTaskTitle;
 @end

@@ -15,7 +15,7 @@
 		661B9D5F2120368F0029CBC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 661B9D5E2120368F0029CBC9 /* main.m */; };
 		661B9D692120368F0029CBC9 /* LibararyManageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 661B9D682120368F0029CBC9 /* LibararyManageTests.m */; };
 		661B9D742120368F0029CBC9 /* LibararyManageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 661B9D732120368F0029CBC9 /* LibararyManageUITests.m */; };
-		6680AD9521226735006C95D6 /* MyTaskTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9421226735006C95D6 /* MyTaskTableView.m */; };
+		6680AD9521226735006C95D6 /* MyTaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9421226735006C95D6 /* MyTaskTableViewCell.m */; };
 		6680AD9821226B7F006C95D6 /* MyTaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9721226B7F006C95D6 /* MyTaskDetailViewController.m */; };
 		66F8CDF22122406C00159ACB /* MyTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8CDF12122406C00159ACB /* MyTaskViewController.m */; };
 		66F8CDF62122409900159ACB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8CDF52122409900159ACB /* BaseViewController.m */; };
@@ -60,8 +60,8 @@
 		661B9D6F2120368F0029CBC9 /* LibararyManageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibararyManageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		661B9D732120368F0029CBC9 /* LibararyManageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibararyManageUITests.m; sourceTree = "<group>"; };
 		661B9D752120368F0029CBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6680AD9321226735006C95D6 /* MyTaskTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTaskTableView.h; sourceTree = "<group>"; };
-		6680AD9421226735006C95D6 /* MyTaskTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTaskTableView.m; sourceTree = "<group>"; };
+		6680AD9321226735006C95D6 /* MyTaskTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTaskTableViewCell.h; sourceTree = "<group>"; };
+		6680AD9421226735006C95D6 /* MyTaskTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTaskTableViewCell.m; sourceTree = "<group>"; };
 		6680AD9621226B7F006C95D6 /* MyTaskDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTaskDetailViewController.h; sourceTree = "<group>"; };
 		6680AD9721226B7F006C95D6 /* MyTaskDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTaskDetailViewController.m; sourceTree = "<group>"; };
 		66F8CDF02122406C00159ACB /* MyTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTaskViewController.h; sourceTree = "<group>"; };
@@ -169,8 +169,8 @@
 			children = (
 				66F8CDF02122406C00159ACB /* MyTaskViewController.h */,
 				66F8CDF12122406C00159ACB /* MyTaskViewController.m */,
-				6680AD9321226735006C95D6 /* MyTaskTableView.h */,
-				6680AD9421226735006C95D6 /* MyTaskTableView.m */,
+				6680AD9321226735006C95D6 /* MyTaskTableViewCell.h */,
+				6680AD9421226735006C95D6 /* MyTaskTableViewCell.m */,
 				6680AD9621226B7F006C95D6 /* MyTaskDetailViewController.h */,
 				6680AD9721226B7F006C95D6 /* MyTaskDetailViewController.m */,
 			);
@@ -403,7 +403,7 @@
 				66F8CDF22122406C00159ACB /* MyTaskViewController.m in Sources */,
 				66F8CDFB212241C200159ACB /* LibraryViewController.m in Sources */,
 				66F8CDF62122409900159ACB /* BaseViewController.m in Sources */,
-				6680AD9521226735006C95D6 /* MyTaskTableView.m in Sources */,
+				6680AD9521226735006C95D6 /* MyTaskTableViewCell.m in Sources */,
 				661B9D4E2120368D0029CBC9 /* AppDelegate.m in Sources */,
 				661B9D5F2120368F0029CBC9 /* main.m in Sources */,
 				661B9D512120368D0029CBC9 /* FirstViewController.m in Sources */,

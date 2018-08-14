@@ -8,6 +8,9 @@
 
 #import "MyTaskViewController.h"
 #import "MyTaskDetailViewController.h"
+#import "MyTaskTableViewCell.h"
+static NSString *identifier =@"myTaskTableViewCell";
+
 @interface MyTaskViewController ()
 
 @end
@@ -17,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.myTaskTableView.delegate = self;
+    self.myTaskTableView.dataSource =self;
+    [self loadData];
+    [self.myTaskTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,5 +49,33 @@
 - (IBAction)taskSegmentAction:(id)sender {
     UISegmentedControl *segment= (UISegmentedControl *)sender;
     NSLog(@"%ld",segment.selectedSegmentIndex);
+}
+
+
+//#pragma mark 载入一些数据，用于显示在UITableView上
+- (void)loadData {
+    //初始化数组
+    self.tableDataArr = [NSMutableArray array];
+    //加入20个字符串到数组中
+    for(int i = 0; i < 20; i++) {
+        [self.tableDataArr addObject:[NSString stringWithFormat:@"学习小组%i", i]];
+    }
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.tableDataArr count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    //从队列中取出单元格
+    MyTaskTableViewCell *cell = [self.myTaskTableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    //为单元格的label设置数据
+    cell.myTaskTitle.text = [self.tableDataArr objectAtIndex:indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
 }
 @end

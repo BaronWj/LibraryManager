@@ -8,7 +8,9 @@
 
 #import "BaseViewController.h"
 
-@interface MyTaskViewController : BaseViewController
+@interface MyTaskViewController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
+@property (strong, nonatomic) NSMutableArray *tableDataArr;
+@property (weak, nonatomic) IBOutlet UITableView *myTaskTableView;
 - (IBAction)taskSegmentAction:(id)sender;
 
 @end
