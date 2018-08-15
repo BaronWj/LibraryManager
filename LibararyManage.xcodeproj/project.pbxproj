@@ -147,14 +147,9 @@
 		661B9D4B2120368D0029CBC9 /* LibararyManage */ = {
 			isa = PBXGroup;
 			children = (
+				6699F2CC2124197D00B10F52 /* Module */,
 				66F8CE062122467800159ACB /* LibMiddle */,
 				66F8CE052122466800159ACB /* LibCore */,
-				66F8CE042122422200159ACB /* Main */,
-				664AE9F9212112CD002D52E1 /* MyTask */,
-				66F8CE00212241FF00159ACB /* Me */,
-				66F8CDFC212241DA00159ACB /* Circle */,
-				66F8CDF82122419100159ACB /* LibraryCollection */,
-				66F8CDF72122417500159ACB /* First */,
 				66F8CDF32122407900159ACB /* Base */,
 				661B9D552120368D0029CBC9 /* Main.storyboard */,
 				661B9D582120368F0029CBC9 /* Assets.xcassets */,
@@ -196,6 +191,19 @@
 				6680AD9A2122C1AE006C95D6 /* AddTaskViewController.m */,
 			);
 			path = MyTask;
+			sourceTree = "<group>";
+		};
+		6699F2CC2124197D00B10F52 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				66F8CE042122422200159ACB /* Main */,
+				664AE9F9212112CD002D52E1 /* MyTask */,
+				66F8CE00212241FF00159ACB /* Me */,
+				66F8CDFC212241DA00159ACB /* Circle */,
+				66F8CDF82122419100159ACB /* LibraryCollection */,
+				66F8CDF72122417500159ACB /* First */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 		66F8CDF32122407900159ACB /* Base */ = {
