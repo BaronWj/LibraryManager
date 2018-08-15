@@ -8,6 +8,9 @@
 
 #import "BaseViewController.h"
 
-@interface MeViewController : BaseViewController
+@interface MeViewController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
+@property (strong, nonatomic) NSMutableArray *tableDataArr;
+
+@property (weak, nonatomic) IBOutlet UITableView *meTableView;
 
 @end

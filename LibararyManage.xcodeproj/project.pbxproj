@@ -18,6 +18,7 @@
 		6680AD9521226735006C95D6 /* MyTaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9421226735006C95D6 /* MyTaskTableViewCell.m */; };
 		6680AD9821226B7F006C95D6 /* MyTaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9721226B7F006C95D6 /* MyTaskDetailViewController.m */; };
 		6680AD9B2122C1AE006C95D6 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9A2122C1AE006C95D6 /* AddTaskViewController.m */; };
+		6699F2CF2124213100B10F52 /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6699F2CE2124213100B10F52 /* MeTableViewCell.m */; };
 		66F8CDF22122406C00159ACB /* MyTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8CDF12122406C00159ACB /* MyTaskViewController.m */; };
 		66F8CDF62122409900159ACB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8CDF52122409900159ACB /* BaseViewController.m */; };
 		66F8CDFB212241C200159ACB /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8CDFA212241C200159ACB /* LibraryViewController.m */; };
@@ -69,6 +70,8 @@
 		6680AD9721226B7F006C95D6 /* MyTaskDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTaskDetailViewController.m; sourceTree = "<group>"; };
 		6680AD992122C1AE006C95D6 /* AddTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
 		6680AD9A2122C1AE006C95D6 /* AddTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		6699F2CD2124213100B10F52 /* MeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
+		6699F2CE2124213100B10F52 /* MeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
 		66F8CDF02122406C00159ACB /* MyTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTaskViewController.h; sourceTree = "<group>"; };
 		66F8CDF12122406C00159ACB /* MyTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTaskViewController.m; sourceTree = "<group>"; };
 		66F8CDF42122409900159ACB /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 			children = (
 				66F8CE012122420D00159ACB /* MeViewController.h */,
 				66F8CE022122420D00159ACB /* MeViewController.m */,
+				6699F2CD2124213100B10F52 /* MeTableViewCell.h */,
+				6699F2CE2124213100B10F52 /* MeTableViewCell.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -491,6 +496,7 @@
 				6680AD9821226B7F006C95D6 /* MyTaskDetailViewController.m in Sources */,
 				6680AD9B2122C1AE006C95D6 /* AddTaskViewController.m in Sources */,
 				66F8CE032122420D00159ACB /* MeViewController.m in Sources */,
+				6699F2CF2124213100B10F52 /* MeTableViewCell.m in Sources */,
 				66F8CDFF212241F600159ACB /* FirendCircleViewController.m in Sources */,
 				66F8CDF22122406C00159ACB /* MyTaskViewController.m in Sources */,
 				66F8CDFB212241C200159ACB /* LibraryViewController.m in Sources */,
