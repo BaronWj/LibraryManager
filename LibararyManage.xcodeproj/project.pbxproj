@@ -15,10 +15,15 @@
 		661B9D5F2120368F0029CBC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 661B9D5E2120368F0029CBC9 /* main.m */; };
 		661B9D692120368F0029CBC9 /* LibararyManageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 661B9D682120368F0029CBC9 /* LibararyManageTests.m */; };
 		661B9D742120368F0029CBC9 /* LibararyManageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 661B9D732120368F0029CBC9 /* LibararyManageUITests.m */; };
+		66584CFD21266DF900D6CF32 /* CircleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66584CFC21266DF900D6CF32 /* CircleDetailViewController.m */; };
+		66584D00212672C400D6CF32 /* AddCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66584CFF212672C400D6CF32 /* AddCircleViewController.m */; };
+		66584D032126D23000D6CF32 /* SearchBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66584D022126D23000D6CF32 /* SearchBookViewController.m */; };
 		6680AD9521226735006C95D6 /* MyTaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9421226735006C95D6 /* MyTaskTableViewCell.m */; };
 		6680AD9821226B7F006C95D6 /* MyTaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9721226B7F006C95D6 /* MyTaskDetailViewController.m */; };
 		6680AD9B2122C1AE006C95D6 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9A2122C1AE006C95D6 /* AddTaskViewController.m */; };
 		6699F2CF2124213100B10F52 /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6699F2CE2124213100B10F52 /* MeTableViewCell.m */; };
+		66F4F9D8212AA0FD007342A1 /* LPActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F4F9D7212AA0FC007342A1 /* LPActionSheet.m */; };
+		66F4F9DB212AA2B6007342A1 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F4F9D9212AA2B6007342A1 /* NSString+Common.m */; };
 		66F8CDF22122406C00159ACB /* MyTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8CDF12122406C00159ACB /* MyTaskViewController.m */; };
 		66F8CDF62122409900159ACB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8CDF52122409900159ACB /* BaseViewController.m */; };
 		66F8CDFB212241C200159ACB /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8CDFA212241C200159ACB /* LibraryViewController.m */; };
@@ -64,6 +69,12 @@
 		661B9D6F2120368F0029CBC9 /* LibararyManageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibararyManageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		661B9D732120368F0029CBC9 /* LibararyManageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibararyManageUITests.m; sourceTree = "<group>"; };
 		661B9D752120368F0029CBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66584CFB21266DF900D6CF32 /* CircleDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleDetailViewController.h; sourceTree = "<group>"; };
+		66584CFC21266DF900D6CF32 /* CircleDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleDetailViewController.m; sourceTree = "<group>"; };
+		66584CFE212672C400D6CF32 /* AddCircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCircleViewController.h; sourceTree = "<group>"; };
+		66584CFF212672C400D6CF32 /* AddCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCircleViewController.m; sourceTree = "<group>"; };
+		66584D012126D23000D6CF32 /* SearchBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBookViewController.h; sourceTree = "<group>"; };
+		66584D022126D23000D6CF32 /* SearchBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBookViewController.m; sourceTree = "<group>"; };
 		6680AD9321226735006C95D6 /* MyTaskTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTaskTableViewCell.h; sourceTree = "<group>"; };
 		6680AD9421226735006C95D6 /* MyTaskTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTaskTableViewCell.m; sourceTree = "<group>"; };
 		6680AD9621226B7F006C95D6 /* MyTaskDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTaskDetailViewController.h; sourceTree = "<group>"; };
@@ -72,6 +83,11 @@
 		6680AD9A2122C1AE006C95D6 /* AddTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
 		6699F2CD2124213100B10F52 /* MeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
 		6699F2CE2124213100B10F52 /* MeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
+		66F4F9D6212AA0FC007342A1 /* LPActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPActionSheet.h; sourceTree = "<group>"; };
+		66F4F9D7212AA0FC007342A1 /* LPActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPActionSheet.m; sourceTree = "<group>"; };
+		66F4F9D9212AA2B6007342A1 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		66F4F9DA212AA2B6007342A1 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		66F4F9DC212AA341007342A1 /* MethodDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodDefine.h; sourceTree = "<group>"; };
 		66F8CDF02122406C00159ACB /* MyTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTaskViewController.h; sourceTree = "<group>"; };
 		66F8CDF12122406C00159ACB /* MyTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTaskViewController.m; sourceTree = "<group>"; };
 		66F8CDF42122409900159ACB /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -199,6 +215,7 @@
 		6699F2CC2124197D00B10F52 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				66F4F9DC212AA341007342A1 /* MethodDefine.h */,
 				66F8CE042122422200159ACB /* Main */,
 				664AE9F9212112CD002D52E1 /* MyTask */,
 				66F8CE00212241FF00159ACB /* Me */,
@@ -207,6 +224,15 @@
 				66F8CDF72122417500159ACB /* First */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		66F4F9D5212AA0FC007342A1 /* LPActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				66F4F9D6212AA0FC007342A1 /* LPActionSheet.h */,
+				66F4F9D7212AA0FC007342A1 /* LPActionSheet.m */,
+			);
+			path = LPActionSheet;
 			sourceTree = "<group>";
 		};
 		66F8CDF32122407900159ACB /* Base */ = {
@@ -241,6 +267,12 @@
 			children = (
 				66F8CDFD212241F600159ACB /* FirendCircleViewController.h */,
 				66F8CDFE212241F600159ACB /* FirendCircleViewController.m */,
+				66584CFB21266DF900D6CF32 /* CircleDetailViewController.h */,
+				66584CFC21266DF900D6CF32 /* CircleDetailViewController.m */,
+				66584CFE212672C400D6CF32 /* AddCircleViewController.h */,
+				66584CFF212672C400D6CF32 /* AddCircleViewController.m */,
+				66584D012126D23000D6CF32 /* SearchBookViewController.h */,
+				66584D022126D23000D6CF32 /* SearchBookViewController.m */,
 			);
 			path = Circle;
 			sourceTree = "<group>";
@@ -277,6 +309,7 @@
 		66F8CE062122467800159ACB /* LibMiddle */ = {
 			isa = PBXGroup;
 			children = (
+				66F4F9D5212AA0FC007342A1 /* LPActionSheet */,
 			);
 			path = LibMiddle;
 			sourceTree = "<group>";
@@ -293,6 +326,8 @@
 		66F8CE0B2122499D00159ACB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				66F4F9DA212AA2B6007342A1 /* NSString+Common.h */,
+				66F4F9D9212AA2B6007342A1 /* NSString+Common.m */,
 				66F8CE0D212249CB00159ACB /* UIColor+expanded.h */,
 				66F8CE0C212249CB00159ACB /* UIColor+expanded.m */,
 			);
@@ -492,18 +527,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F8CE0E212249CB00159ACB /* UIColor+expanded.m in Sources */,
+				66F4F9DB212AA2B6007342A1 /* NSString+Common.m in Sources */,
 				66F8CE0A2122468F00159ACB /* UINavigationBar+handle.m in Sources */,
 				6680AD9821226B7F006C95D6 /* MyTaskDetailViewController.m in Sources */,
 				6680AD9B2122C1AE006C95D6 /* AddTaskViewController.m in Sources */,
 				66F8CE032122420D00159ACB /* MeViewController.m in Sources */,
+				66F4F9D8212AA0FD007342A1 /* LPActionSheet.m in Sources */,
 				6699F2CF2124213100B10F52 /* MeTableViewCell.m in Sources */,
 				66F8CDFF212241F600159ACB /* FirendCircleViewController.m in Sources */,
 				66F8CDF22122406C00159ACB /* MyTaskViewController.m in Sources */,
+				66584CFD21266DF900D6CF32 /* CircleDetailViewController.m in Sources */,
 				66F8CDFB212241C200159ACB /* LibraryViewController.m in Sources */,
 				66F8CDF62122409900159ACB /* BaseViewController.m in Sources */,
 				6680AD9521226735006C95D6 /* MyTaskTableViewCell.m in Sources */,
 				661B9D4E2120368D0029CBC9 /* AppDelegate.m in Sources */,
 				661B9D5F2120368F0029CBC9 /* main.m in Sources */,
+				66584D032126D23000D6CF32 /* SearchBookViewController.m in Sources */,
+				66584D00212672C400D6CF32 /* AddCircleViewController.m in Sources */,
 				661B9D512120368D0029CBC9 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,8 @@
 //
 
 #import "MyTaskDetailViewController.h"
-
+#import "LPActionSheet.h"
+#import <Social/Social.h>
 @interface MyTaskDetailViewController ()
 
 @end
@@ -17,13 +18,67 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"任务详情";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)shareAction:(id)sender {
+    [self configUnbind];
+}
+
+
+- (void)configUnbind
+{
+    __weak typeof(self) weakSelf = self;
+    NSDictionary *properties = @{FirstFontSize:@"14",
+                                 FirstTextColor:@"0x999999",
+                                 SecondFontSize:@"15",
+                                 SecondTextColor:@"0x333333",
+                                 ThirdFontSize:@"15",
+                                 ThirdTextColor:@"0x448CFF",
+                                 };
+    [LPActionSheet showActionSheetWithTitle:@"分享" cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@[@"分享"] properties:properties handler:^(LPActionSheet *actionSheet, NSInteger index) {
+        if(index == 1){
+            [weakSelf shareContent];
+        }
+    }];
+}
+
+
+-(void)shareContent{
+    NSString *testToShare = @"分享的标题";
+    
+    UIImage *imageToShare = [UIImage imageNamed:@"first"];
+    
+    NSURL *urlToShare = [NSURL URLWithString:@"http://www.baidu.com"];
+    
+    NSArray *activityItems = @[testToShare,imageToShare,urlToShare];
+    
+     UIActivityViewController *activityVc = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+     activityVc.modalInPopover = YES;
+
+    [self presentViewController:activityVc animated:YES completion:nil];
+    
+    activityVc.completionWithItemsHandler = ^(UIActivityType  _Nullable activityType, BOOL completed, NSArray * _Nullable returnedItems, NSError * _Nullable activityError) {
+        
+        if (completed) {
+            
+            NSLog(@"分享成功");
+            
+        }else{
+            
+            NSLog(@"分享取消");
+            
+        }
+        
+        
+        
+    };
+}
+
 
 /*
 #pragma mark - Navigation

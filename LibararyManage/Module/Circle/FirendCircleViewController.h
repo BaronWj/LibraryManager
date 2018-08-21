@@ -8,6 +8,9 @@
 
 #import "BaseViewController.h"
 
-@interface FirendCircleViewController : BaseViewController
+@interface FirendCircleViewController : BaseViewController<UISearchBarDelegate>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *circleCollectionView;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
