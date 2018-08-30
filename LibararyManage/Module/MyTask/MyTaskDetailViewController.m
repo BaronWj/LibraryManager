@@ -9,7 +9,10 @@
 #import "MyTaskDetailViewController.h"
 #import "LPActionSheet.h"
 #import <Social/Social.h>
+#import "TggStarEvaluationView.h"
+#import "MethodDefine.h"
 @interface MyTaskDetailViewController ()
+@property (weak ,nonatomic) TggStarEvaluationView *tggStarEvaView;
 
 @end
 
@@ -18,6 +21,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    // 注意weakSelf
+    __weak __typeof(self)weakSelf = self;
+    // 初始化
+    self.tggStarEvaView = [TggStarEvaluationView evaluationViewWithChooseStarBlock:^(NSUInteger count) {
+        NSLog(@"\n\n给了铁哥哥：%ld星好评！！!\n\n",count);
+       
+    }];
+    self.tggStarEvaView.frame = (CGRect){self.view.frame.size.width / 2 - 23 * 5+33,kScreenHeight - 121,23 * 10,45};
+    [self.view addSubview:self.tggStarEvaView];
+    
+    // 设置展示的星星数量
+    // self.tggStarEvaView.starCount = 3;
+    
+    // 星星之间的间距，默认0.5
+    // self.tggStarEvaView.spacing = 0.5;
+    
+    // 星星的点击事件使能,默认YES
+    // self.tggStarEvaView.tapEnabled = NO;
+    
+//    // 下面这个不带回调，就不会打印了
+//    TggStarEvaluationView *tggStarEvaView1 = [TggStarEvaluationView evaluationViewWithChooseStarBlock:nil];
+//    tggStarEvaView1.frame = (CGRect){self.view.frame.size.width / 2 - 23 * 5,320 + 50,23 * 10,45};
+//    [self.view addSubview:tggStarEvaView1];
 }
 
 - (void)didReceiveMemoryWarning {

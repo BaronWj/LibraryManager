@@ -7,8 +7,10 @@
 //
 
 #import "AddTaskViewController.h"
-
+#import "TggStarEvaluationView.h"
+#import "MethodDefine.h"
 @interface AddTaskViewController ()
+@property (weak ,nonatomic) TggStarEvaluationView *tggStarEvaView;
 
 @end
 
@@ -17,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    __weak __typeof(self)weakSelf = self;
+    // 初始化
+    self.tggStarEvaView = [TggStarEvaluationView evaluationViewWithChooseStarBlock:^(NSUInteger count) {
+        NSLog(@"\n\n给了铁哥哥：%ld星好评！！!\n\n",count);
+        
+    }];
+    self.tggStarEvaView.frame = (CGRect){self.view.frame.size.width / 2 - 23 * 5+33,kScreenHeight - 121,23 * 10,45};
+    [self.view addSubview:self.tggStarEvaView];
 }
 
 - (void)didReceiveMemoryWarning {

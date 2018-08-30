@@ -21,6 +21,7 @@
 		6680AD9521226735006C95D6 /* MyTaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9421226735006C95D6 /* MyTaskTableViewCell.m */; };
 		6680AD9821226B7F006C95D6 /* MyTaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9721226B7F006C95D6 /* MyTaskDetailViewController.m */; };
 		6680AD9B2122C1AE006C95D6 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6680AD9A2122C1AE006C95D6 /* AddTaskViewController.m */; };
+		66966B70212D5A0800A83B12 /* TggStarEvaluationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66966B6F212D5A0800A83B12 /* TggStarEvaluationView.m */; };
 		6699F2CF2124213100B10F52 /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6699F2CE2124213100B10F52 /* MeTableViewCell.m */; };
 		66F4F9D8212AA0FD007342A1 /* LPActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F4F9D7212AA0FC007342A1 /* LPActionSheet.m */; };
 		66F4F9DB212AA2B6007342A1 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F4F9D9212AA2B6007342A1 /* NSString+Common.m */; };
@@ -81,6 +82,8 @@
 		6680AD9721226B7F006C95D6 /* MyTaskDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTaskDetailViewController.m; sourceTree = "<group>"; };
 		6680AD992122C1AE006C95D6 /* AddTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
 		6680AD9A2122C1AE006C95D6 /* AddTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		66966B6E212D5A0800A83B12 /* TggStarEvaluationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TggStarEvaluationView.h; sourceTree = "<group>"; };
+		66966B6F212D5A0800A83B12 /* TggStarEvaluationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TggStarEvaluationView.m; sourceTree = "<group>"; };
 		6699F2CD2124213100B10F52 /* MeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
 		6699F2CE2124213100B10F52 /* MeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
 		66F4F9D6212AA0FC007342A1 /* LPActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPActionSheet.h; sourceTree = "<group>"; };
@@ -212,6 +215,15 @@
 			path = MyTask;
 			sourceTree = "<group>";
 		};
+		66966B6D212D59DB00A83B12 /* Tgg */ = {
+			isa = PBXGroup;
+			children = (
+				66966B6E212D5A0800A83B12 /* TggStarEvaluationView.h */,
+				66966B6F212D5A0800A83B12 /* TggStarEvaluationView.m */,
+			);
+			path = Tgg;
+			sourceTree = "<group>";
+		};
 		6699F2CC2124197D00B10F52 /* Module */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +321,7 @@
 		66F8CE062122467800159ACB /* LibMiddle */ = {
 			isa = PBXGroup;
 			children = (
+				66966B6D212D59DB00A83B12 /* Tgg */,
 				66F4F9D5212AA0FC007342A1 /* LPActionSheet */,
 			);
 			path = LibMiddle;
@@ -543,6 +556,7 @@
 				661B9D4E2120368D0029CBC9 /* AppDelegate.m in Sources */,
 				661B9D5F2120368F0029CBC9 /* main.m in Sources */,
 				66584D032126D23000D6CF32 /* SearchBookViewController.m in Sources */,
+				66966B70212D5A0800A83B12 /* TggStarEvaluationView.m in Sources */,
 				66584D00212672C400D6CF32 /* AddCircleViewController.m in Sources */,
 				661B9D512120368D0029CBC9 /* FirstViewController.m in Sources */,
 			);
