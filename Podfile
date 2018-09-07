@@ -12,5 +12,11 @@ pod 'pop', '~> 1.0.9'
 pod 'ReactiveCocoa', '2.3.1'
 pod 'CocoaLumberjack'
 pod 'CommentLib'
+pod 'MJRefresh'
+pod 'DateTools'
+pod 'NullSafe', '~> 1.2.2'
+pod 'FMDB'
+pod 'MWPhotoBrowser'
+pod 'IQKeyboardManager'
 end
 
