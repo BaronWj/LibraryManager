@@ -23,9 +23,9 @@
     self.dataList=[NSMutableArray arrayWithCapacity:100];
     
     //产生100个“数字+三个随机字母”
-    for (NSInteger i=0; i<100; i++) {
-        [self.dataList addObject:[NSString stringWithFormat:@"%ld%@",(long)i,[self shuffledAlphabet]]];
-    }
+//    for (NSInteger i=0; i<100; i++) {
+//        [self.dataList addObject:[NSString stringWithFormat:@"%ld%@",(long)i,[self shuffledAlphabet]]];
+//    }
     
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 22,[UIScreen  mainScreen].bounds.size.width ,[UIScreen  mainScreen].bounds.size.height)];
     _tableView.backgroundColor = [UIColor whiteColor];

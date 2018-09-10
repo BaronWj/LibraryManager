@@ -9,5 +9,5 @@
 #import "BaseViewController.h"
 
 @interface MyTaskDetailViewController : BaseViewController
-
+@property (strong, nonatomic) NSDictionary *myTaskDict;
 @end

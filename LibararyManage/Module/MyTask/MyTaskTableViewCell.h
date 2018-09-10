@@ -10,4 +10,5 @@
 
 @interface MyTaskTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *myTaskTitle;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @end

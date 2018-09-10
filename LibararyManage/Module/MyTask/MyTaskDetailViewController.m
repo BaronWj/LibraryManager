@@ -34,7 +34,7 @@
     [self.view addSubview:self.tggStarEvaView];
     
     // 设置展示的星星数量
-    // self.tggStarEvaView.starCount = 3;
+     self.tggStarEvaView.starCount = 3;
     
     // 星星之间的间距，默认0.5
     // self.tggStarEvaView.spacing = 0.5;
@@ -46,6 +46,7 @@
 //    TggStarEvaluationView *tggStarEvaView1 = [TggStarEvaluationView evaluationViewWithChooseStarBlock:nil];
 //    tggStarEvaView1.frame = (CGRect){self.view.frame.size.width / 2 - 23 * 5,320 + 50,23 * 10,45};
 //    [self.view addSubview:tggStarEvaView1];
+        
 }
 
 - (void)didReceiveMemoryWarning {
@@ -107,6 +108,9 @@
     };
 }
 
+- (IBAction)createTask:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 /*
 #pragma mark - Navigation
